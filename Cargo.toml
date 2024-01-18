@@ -15,11 +15,11 @@ homepage = "https://github.com/zkat/big-brain"
 [workspace]
 
 [dependencies]
-bevy = { version = "0.12.1", default-features = false }
+bevy = { path = "../bevy", default-features = false }
 big-brain-derive = { version = "=0.19.0", path = "./derive" }
 
 [dev-dependencies]
-bevy = { version = "0.12.1", default-features = true }
+bevy = { path = "../bevy", default-features = true }
 rand = { version = "0.8.5", features = ["small_rng"] }
 bevy-scene-hook = "9.0.0"
 
